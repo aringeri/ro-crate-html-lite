@@ -1,4 +1,4 @@
-FROM node:25.6.1@sha256:75c416c7d966e4684e58afa091a86c9a01b16c610e46d8e40c5563df18e9623a
+FROM --platform=$BUILDPLATFORM node:25.6.1
 
 COPY . /ro-crate-html-lite
 WORKDIR /ro-crate-html-lite
